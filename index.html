@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <title>تهنئة إتقان لعيد الأضحى</title>
+  <title>تهنئة إتقان لشهر رمضان</title>
   <link rel="stylesheet" href="style.css">
   <style>
     @font-face {
@@ -21,21 +21,22 @@
     <div class="loader">جاري التحميل...</div>
   </div>
     <img src="30cm_300ppi.png" alt="ITQAN Logo" class="itqan-logo">
-  <h1>أدخل اسمك لتخصيص بطاقة المعايدة</h1>
+  <h1>أدخل اسمك لتخصيص بطاقة التهنئة</h1>
   <input type="text" id="nameInput" placeholder="اكتب اسمك هنا">
   <div class="canvas-wrapper">
-    <canvas id="greetingCanvas" width="768" height="1365"></canvas>
-    <canvas id="hiddenCanvas" width="768" height="1365" style="display:none;"></canvas>
+    <canvas id="greetingCanvas" width="960" height="1365"></canvas>
+    <canvas id="hiddenCanvas" width="960" height="1365" style="display:none;"></canvas>
   </div>
-  <button onclick="downloadImage()">حفظ المعايدة</button>
+  <button onclick="downloadImage()">حفظ التهنئة</button>
 
-  <script>
+  <script type="text/javascript" src="script.js"></script>
+  <!-- <script>
     const displayCanvas = document.getElementById('greetingCanvas');
     const displayCtx = displayCanvas.getContext('2d');
     const hiddenCanvas = document.getElementById('hiddenCanvas');
     const hiddenCtx = hiddenCanvas.getContext('2d');
     const baseImage = new Image();
-    baseImage.src = 'ITQAN_eidadha.jpeg';
+    baseImage.src = 'ITQAN_ramadan.jpeg';
 
     const nameInput = document.getElementById('nameInput');
 
@@ -61,12 +62,12 @@
 
 
     const downloadImage = () => {
-      const name = nameInput.value.trim() || 'eid-greeting';
+      const name = nameInput.value.trim() || 'ramadan-greeting';
       const link = document.createElement('a');
       link.download = `${name}.png`;
       link.href = hiddenCanvas.toDataURL();
       link.click();
     };
-  </script>
+  </script> -->
 </body>
 </html>
