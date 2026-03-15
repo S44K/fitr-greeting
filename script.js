@@ -1,7 +1,7 @@
 const canvas = document.getElementById('greetingCanvas');
 const ctx = canvas.getContext('2d');
 const baseImage = new Image();
-baseImage.src = 'ITQAN_ramadan.jpeg';
+baseImage.src = 'ITQAN_fitr.png';
 
 const drawImageWithName = (name = '') => {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -9,7 +9,7 @@ const drawImageWithName = (name = '') => {
   ctx.font = 'bold 36px Cairo';
   ctx.fillStyle = 'white';
   ctx.textAlign = 'center';
-  ctx.fillText(name, 650, 1100); // Fixed coordinates
+  ctx.fillText(name, 680, 1100); // Fixed coordinates
 };
 
 baseImage.onload = () => {
