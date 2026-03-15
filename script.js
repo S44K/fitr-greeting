@@ -9,7 +9,7 @@ const drawImageWithName = (name = '') => {
   ctx.font = 'bold 36px Cairo';
   ctx.fillStyle = 'white';
   ctx.textAlign = 'center';
-  ctx.fillText(name, 680, 1100); // Fixed coordinates
+  ctx.fillText(name, 760, 1100); // Fixed coordinates
 };
 
 baseImage.onload = () => {
